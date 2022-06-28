@@ -9,9 +9,21 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
+    font-family: Open400;
 
 }
-
+@font-face {
+    font-family: "Open400";
+    src: url(/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Open700";
+    src: url(/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: "Popp600";
+    src: url(/Poppins-SemiBold.ttf);
+}
 header {
     width: 100%;
     overflow: hidden;
@@ -21,24 +33,31 @@ header {
     /* padding: 2.5% 3%; */
     /* margin-bottom: 5%; */
     background: url(./images/bg-hero-desktop.svg),
-    hsla(193, 100%, 96%,0.9);
-
+        hsla(193, 100%, 96%, 0.9);
 }
-
+h1, h2{
+    font-family: Popp600;
+}
+button{
+    font-family: Open700;
+}
 main {
     width: 80%;
     margin: 5%;
 }
-.Head1{
+
+.Head1 {
     width: 80%;
     top: 0;
     padding: 3%;
-    margin: 5%;
+    /* margin: 5%; */
     /* margin: 50px; */
 }
-.leftside, .rightside{
-    flex: 50%;
+.leftside,
+.rightside {
+    width: 50%;
 }
+
 .leftside {
     float: left;
 }
@@ -46,67 +65,112 @@ main {
 .rightside {
     float: right;
 }
-.rightside button{
+
+.rightside button {
     border: 3px solid white;
     background-color: white;
     color: hsl(192, 100%, 9%);
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
-    width: 50%
+    width: 30%;
+
+}
+.Headb{
+    margin-right: 0px;
+    box-shadow: 0px 0px 5px 0px rgb(212, 210, 210);
+
 }
 .Head2 {
     width: 80%;
     margin: 50px;
     display: flex;
 }
-.lside, .rside{
-    flex: 40% 60%;
+
+.lside,
+.rside {
+    width: 40% 60%;
 }
-.rside img{
+
+.rside img {
     /* display: block; */
     max-width: 100%;
     max-height: 100%;
 }
+.Butt2 {
+    background-color: hsl(322, 100%, 66%);
+    font-size: 10px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: 3px solid hsl(322, 100%, 66%);
+    color: white;
+    border-radius: 20px;
+    width: 30%;
+
+}
 .parts {
-    width: 60%;
-    height: 30%;
-    margin: 5% 0;
+    /* height: 15%; */
     padding: 3%;
     border-radius: 20px;
-}
-
-.parts svg {
+    display: flex;
     width: 100%;
+    margin: 5%;
+    box-shadow: 0px 0px 10px 0px rgb(212, 210, 210);
+    height: 350px;
+}
+.parts h1{
+    font-size: 18px;
+    font-weight: 700;
+}
+.left1,
+.right1 {
+    width: 50%;
 }
 
-/* .parts .left{
-    width: 30%;
-} */
+.left1 {
+    justify-content: center;
+    padding: 10%;
+}
 
-.left1, .right1{
-    flex: 50%;
-}
-.right1 img{
+.right1 img {
     display: block;
     max-width: 100%;
     max-height: 100%;
 }
-.left2, .right2{
-    flex: 50%;
+
+.left2,
+.right2 {
+    width: 50%;
 }
-.left2 img{
+
+.right2 {
+    justify-content: center;
+}
+
+.left2 img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    /* padding:0 7%; */
+    /* margin: 5%; */
+    padding: 10%;
+}
+
+.left3,
+.right3 {
+    width: 50%;
+}
+
+.left3 {
+    justify-content: center;
+    padding: 10%;
+}
+
+.right3 img {
     display: block;
     max-width: 100%;
     max-height: 100%;
 }
-.left3, .right3{
-    flex: 50%;
-}
-.right3 img{
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-}
+
 .headdd {
     width: 100%;
 }
@@ -116,25 +180,9 @@ main {
     width: 75%;
 }
 
-.Butt2 {
-    background-color: hsl(322, 100%, 66%);
-    font-size: smaller;
-    padding: 10px 30px;
-    margin: 10px 0;
-    border: 3px solid hsl(322, 100%, 66%);
-    color: white;
-    border-radius: 20px;
-    width: 60%;
+.parts.top{
+    margin-top: 9%;
 }
-
-.parts {
-    display: flex;
-    width: 100%;
-    margin: 3%;
-    box-shadow: 0px 2px 2px 3px rgb(212, 210, 210);
-
-}
-
 section {
     margin-top: 20%;
 }
@@ -151,6 +199,7 @@ section {
     text-align: center;
     margin-top: 10%;
     box-shadow: 0px 2px 2px 3px rgb(212, 210, 210);
+    padding: 15px 30px;
 }
 
 .extra h2 {
@@ -161,14 +210,16 @@ section {
 .extra button {
     background-color: hsl(322, 100%, 66%);
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     border: 3px solid hsl(322, 100%, 66%);
     margin-top: 5px;
-    padding: 20px 30px;
+    padding: 15px 10px;
     margin: 20px;
     border-radius: 30px;
     width: 50%;
+    box-shadow: 0px 0px 10px 0px rgb(212, 210, 210);
+
 }
 
 .extra button:hover {
@@ -181,6 +232,7 @@ section {
 
 .huddicon {
     padding-top: 3%;
+    padding-left: 7% ;
 }
 
 .main {
@@ -189,7 +241,7 @@ section {
 }
 
 li {
-    font-size: 12px;
+    font-size: 10px;
     padding: 10px;
     color: white;
 }
@@ -218,16 +270,20 @@ li {
 .four ul {
     width: 100%;
 }
-.smclass{
+
+.smclass {
     justify-items: right;
 }
-.smclass small{
+
+.smclass small {
     text-align: right;
 }
+
 footer {
     position: relative;
     margin-top: 20%;
     background-color: hsl(192, 100%, 9%);
     color: white;
     padding: 5%;
+    padding-top: 10%;
 }
