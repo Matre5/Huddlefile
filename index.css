@@ -28,7 +28,7 @@ header {
     width: 100%;
     overflow: hidden;
     top: 0;
-    left: 0;
+    /* left: 0; */
     background: url();
     /* padding: 2.5% 3%; */
     /* margin-bottom: 5%; */
@@ -50,44 +50,36 @@ main {
     width: 80%;
     top: 0;
     padding: 3%;
-    /* margin: 5%; */
-    /* margin: 50px; */
-}
-.leftside,
-.rightside {
-    width: 50%;
+    display: flex;
+
 }
 
-.leftside {
-    float: left;
+.rightside{
+    width: 10%;
 }
-
-.rightside {
-    float: right;
-}
-
 .rightside button {
     border: 3px solid white;
     background-color: white;
     color: hsl(192, 100%, 9%);
     padding: 10px;
     border-radius: 20px;
-    width: 30%;
-
+    width: 100%;
 }
+
 .Headb{
     margin-right: 0px;
     box-shadow: 0px 0px 5px 0px rgb(212, 210, 210);
-
 }
 .Head2 {
+    height: 70%;
     width: 80%;
-    margin: 50px;
+    margin: 1.5% 3%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.lside,
-.rside {
+.lside, .rside {
     width: 40% 60%;
 }
 
@@ -95,6 +87,19 @@ main {
     /* display: block; */
     max-width: 100%;
     max-height: 100%;
+    margin: auto;
+}
+.lside{
+    width: 70%;
+    padding: 5%;
+}
+.lside h1{
+    font-size: 25px;
+    width: 100%;
+    padding: 4% 0;
+}
+.lside p{
+    font-size: 14px;
 }
 .Butt2 {
     background-color: hsl(322, 100%, 66%);
@@ -104,7 +109,7 @@ main {
     border: 3px solid hsl(322, 100%, 66%);
     color: white;
     border-radius: 20px;
-    width: 30%;
+    width: 50%;
 
 }
 .parts {
@@ -115,7 +120,7 @@ main {
     width: 100%;
     margin: 5%;
     box-shadow: 0px 0px 10px 0px rgb(212, 210, 210);
-    height: 350px;
+    height: 300px;
 }
 .parts h1{
     font-size: 18px;
@@ -129,12 +134,19 @@ main {
 .left1 {
     justify-content: center;
     padding: 10%;
+    display: block;
+    max-width: 70%;
+    max-height: 80%;
+    padding: 7%;
+    margin: auto;
 }
 
 .right1 img {
     display: block;
-    max-width: 100%;
+    max-width: 70%;
     max-height: 100%;
+    padding: 7%;
+    margin: auto;
 }
 
 .left2,
@@ -144,15 +156,20 @@ main {
 
 .right2 {
     justify-content: center;
+    padding: 10%;
+    display: block;
+    max-width: 70%;
+    max-height: 80%;
+    padding: 7%;
+    margin: auto;
 }
 
 .left2 img {
     display: block;
-    max-width: 100%;
-    max-height: 100%;
-    /* padding:0 7%; */
-    /* margin: 5%; */
-    padding: 10%;
+    max-width: 70%;
+    max-height: 80%;
+    padding: 7%;
+    margin: auto;
 }
 
 .left3,
@@ -163,12 +180,19 @@ main {
 .left3 {
     justify-content: center;
     padding: 10%;
+    display: block;
+    max-width: 70%;
+    max-height: 80%;
+    padding: 7%;
+    margin: auto;
 }
 
 .right3 img {
     display: block;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 70%;
+    max-height: 80%;
+    padding: 7%;
+    margin: auto;
 }
 
 .headdd {
@@ -183,11 +207,15 @@ main {
 .parts.top{
     margin-top: 9%;
 }
+
 section {
+    position: relative;
     margin-top: 20%;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    /* padding: 5%; */
+    padding-top: 10%;
 }
-
-
 .extra {
     position: absolute;
     left: 27.5%;
@@ -198,7 +226,7 @@ section {
     border-radius: 10px;
     text-align: center;
     margin-top: 10%;
-    box-shadow: 0px 2px 2px 3px rgb(212, 210, 210);
+    box-shadow: 0px 0px 10px 0px rgb(212, 210, 210);
     padding: 15px 30px;
 }
 
@@ -241,25 +269,25 @@ section {
 }
 
 li {
-    font-size: 10px;
+    font-size: 15px;
     padding: 10px;
     color: white;
 }
 
 .one {
     width: 30%;
-    margin: 0 5%;
+    margin:0 2%;
     display: block;
 }
 
 .two {
-    width: 10%;
-    margin: 0 5%;
+    width: 15%;
+    /* margin: 0 5%; */
 }
 
 .three {
-    width: 10%;
-    margin: 0 5%;
+    width: 15%;
+    /* margin: 0 5%; */
 }
 
 .four {
@@ -267,23 +295,132 @@ li {
     margin: 0 5%;
 }
 
-.four ul {
+/* .four ul {
     width: 100%;
-}
-
-.smclass {
-    justify-items: right;
-}
-
-.smclass small {
-    text-align: right;
-}
-
-footer {
-    position: relative;
-    margin-top: 20%;
+} */
+footer{
+    
     background-color: hsl(192, 100%, 9%);
     color: white;
-    padding: 5%;
-    padding-top: 10%;
+    text-align: right;
+
+}
+.smclass{
+    padding: 3% 1%;
+    font-family: Popp600;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+@media screen and (max-width : 560px) {
+    body{
+        width: 375px;
+
+    }
+    header{
+        width: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        background: url(./images/bg-hero-mobile.svg),
+            hsla(193, 100%, 96%, 0.9);
+    }
+    
+    .Head2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .lside{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+    }
+    .Head2 h1{
+        text-align: center;
+        margin: auto;
+        width: 90%;
+    }
+    .lside p{
+        text-align: center;
+        padding: 2%;
+        width: 90%;
+        font-size: 16px;
+    }
+    .Butt2 {
+        align-items: center;
+        justify-content: center;
+        margin: 5% 12%;
+        background-color: hsl(322, 100%, 66%);
+        font-size: 15px;
+        padding: 10px 10px;
+        color: white;
+        border-radius: 20px;
+        width: 70%;
+        border-color: none;
+    
+    }
+    .rside{
+        width: 90%;
+        padding: 2%;
+        margin: 4%;
+    }
+    main{
+        height: 100%;
+    }
+    .parts{
+        display: inline-block;
+        max-height: 100%;
+    }
+    footer{
+        padding: none;
+        margin: none;
+        max-width: 100%;
+        align-items: left;
+    }
+    .extra{
+        width: 70%;
+        margin: auto;
+        overflow: auto;
+
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main ul{
+        width: 100%;
+        left: 0;
+    }
+    .main li{
+        font-size: 16px;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .one{
+        width: 90%;
+        padding: 0;
+        text-align: left;
+        margin: auto;
+        left: 0;
+        flex-wrap: wrap;
+    }
+    .two{
+        width: 90%;
+        padding: 0;
+        text-align: left;
+        margin: auto;
+        left: 0;
+    }
+    .three{
+        width: 90%;
+        padding: 0;
+        text-align: left;
+        margin: auto;
+        left: 0;
+    }
 }
